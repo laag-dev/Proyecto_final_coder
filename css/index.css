@@ -1,0 +1,128 @@
+/*variables de toda la web*/
+@import url("https://fonts.googleapis.com/css2?family=Aleo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aleo&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: 'Aleo', serif; }
+
+/*variables de toda la web*/
+/*Header*/
+header {
+  width: 100%;
+  height: 100vh;
+  background: #186365;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #f8bf8557, #1862656b), url(../images/fondo_psicologia.jpg);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #f8bf85c4, #18626557), url(../images/fondo_psicologia.jpg);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.logo {
+  height: 100px;
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start; }
+  .logo__imagenLogo {
+    width: 700px;
+    height: 280px;
+    filter: contrast(100); }
+
+.inicio {
+  padding-left: 2rem;
+  padding-top: 10rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: baseline; }
+  .inicio__tituloH1 {
+    font-size: 40px;
+    color: #0E5053;
+    text-align: left; }
+  .inicio__subTitulo {
+    font-size: 25px;
+    color: #363032;
+    text-align: left; }
+
+.nav__menu {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  border-bottom: 5px solid #F8BF85;
+  background: #363032; }
+  .nav__menu ul {
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .nav__menu ul li {
+      list-style: none; }
+      .nav__menu ul li a {
+        text-decoration: none;
+        color: #F9F9F9;
+        font-size: 1rem;
+        margin: 0px 10px;
+        padding: 15px;
+        border-radius: 10px;
+        cursor: pointer; }
+    .nav__menu ul li:hover a {
+      color: #363032;
+      transition: 0.5s;
+      background-color: #F8BF85;
+      border-radius: 20%; }
+
+/*Section*/
+.contenedor, .contenedor__grid {
+  padding: 2rem 0;
+  width: 90%;
+  max-width: 1000;
+  margin: 100px auto;
+  overflow: hidden; }
+  .contenedor__titulos {
+    padding: 0;
+    width: 100%;
+    font-size: 30px;
+    color: #0E5053;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center; }
+  .contenedor__sobre {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    justify-content: center; }
+    .contenedor__sobre--imagenSobre {
+      width: 600px;
+      height: 450px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+  .contenedor__parafos {
+    font-size: 24px;
+    color: #363032;
+    text-align: center; }
+  .contenedor__grid--gridTitulos {
+    font-size: 26px;
+    color: #F8BF85;
+    text-align: center; }
+  .contenedor__grid__gridParrafos {
+    font-size: 14px;
+    color: #363032;
+    text-align: justify; }

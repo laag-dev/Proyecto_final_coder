@@ -1,0 +1,17 @@
+@mixin flex ($direction, $align, $justify) {
+    display: flex;
+    flex-direction: $direction;
+    align-items: $align;
+    justify-content: $justify;
+}
+
+@mixin titulos ($size, $color, $align) {
+    font-size: $size ;
+    color: $color;
+    text-align: $align;
+}
+@mixin parrafos ($size, $color, $align) {
+    font-size: $size ;
+    color: $color;
+    text-align: $align;
+}

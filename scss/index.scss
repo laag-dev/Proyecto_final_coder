@@ -1,0 +1,48 @@
+@import "./variables";
+@import"./globales";
+@import "./mixins";
+
+
+/*Section*/
+.contenedor {
+    padding: 2rem 0;
+    width: 90%;
+    max-width: 1000;
+    margin: 100px auto;
+    overflow: hidden;
+
+    &__titulos {
+        padding: 0;
+        width: 100%;
+        @include titulos(30px, $color-tur, center);
+        @include flex(column, flex-start, center);
+    }
+
+    &__sobre {
+        width: 100%;
+        @include flex(column, space-between , center);
+
+        &--imagenSobre {
+            width: 600px;
+            height: 450px;
+            @include flex(column, center, center);
+        } 
+    }
+
+    &__parafos {
+        @include parrafos(24px,$color-gris, center);
+    }
+
+    &__grid {
+        @extend .contenedor;
+        
+        &--gridTitulos{
+            @include titulos(26px, $color-melon, center);
+        }
+
+        &__gridParrafos{
+            @include parrafos(14px, $color-gris, justify);
+        }
+    }
+    
+}
