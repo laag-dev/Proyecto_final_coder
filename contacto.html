@@ -8,53 +8,61 @@
     <title>Contacto</title>
 </head>
 <body>
-    <header>
-        <div class="logo">
+    <div class="bubble1"></div>
+    <div class="bubble2"></div>
+    <div class="square"></div>
             <img src="images/logo_paola.svg" alt="psico_paola_florez" class="logo__imagenLogo" >
-        </div>
-        <div class="inicio">
-            <strong>
-            <h1 class="inicio__tituloH1">¡Comienza terapia online sin moverte de casa!</h1>
-            </strong>
-            <br>
-            <strong>
-            <h2 class="inicio__subTitulo">Es momento de que puedas dedicarte un tiempo.
-            </strong>
-            <br>
-            <strong>
-            Elegí cómo, cuándo y desde qué plataforma.</h2>
-            </div>
-            </strong>
-        </div>
+        
+    
         <div class="nav">
             <nav class="nav__menu">
                 <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="">Sobre mí</a></li>
-                    <li><a href="#">Servicios</a></li>
+                    <li><a href="./index.html">Inicio</a></li>
                     <li><a href="terapia_online.html">Terapia online</a> </li>
                 <li><a href="contacto.html">Contacto</a></li>
                 </ul>
             </nav>
         </div>
-    </header>
-        <form action="">
-        <h1>Contacto</h1>
-        <br>
-        <p>Ya muchas personas en el país, se encuentran experimentando esta modalidad. ¡Consultanos!</p>
-        <br>
-           <input id="nombre" type="text" name="name" placeholder="Nombre">
-            <input id="apellido" type="text" name="lastname" placeholder="Apellido">
-            <input id="mail" type="mail" name="email" required placeholder="Email">  
-            <label for="problematica">Motivo de consulta:</label>
-            <textarea name="problematica" id="" cols="60" rows="10" placeholder="Indicar problemática a tratar"></textarea>
-            <div id="oculto" style="display: none;"> Se envio la información </div>        
-             <button id="btnEnviar">Enviar información</button>
-             <button id="ocultarInf">Reiniciar</button> 
-        </form>
-        <footer> 
-            <i class="fab fa-facebook-square"></i>
-            <p>Correo electrónico: psicopaolaflorez@gmail.com</p>
-        </footer>
+<form class="form" action="">
+<h1>Contacto</h1>
+<p>Ya muchas personas en el país, se encuentran experimentando esta modalidad. ¡Consultanos!</p>
+    <input id="nombre" type="text" name="name" placeholder="Nombre">
+    <input id="apellido" type="text" name="lastname" placeholder="Apellido">
+    <input type="date" name="" id="fecha">
+    <input id="mail" type="mail" name="email" required placeholder="Email">
+    <input type="tel" name="telefono" id="telefono" placeholder="Teléfono">
+        <select name="" id="motivoConsulta">
+            <option value="Ansiedad">Ansiedad</option>
+            <option value="Depresión">Depresión</option>
+            <option value="Desregulación emocional">Desregulación emocional</option>
+            <option value="Duelo">Duelo</option>
+            <option value="Identidad de género">Identidad de género</option>
+            <option value="Trastornos alimenticios">Trastornos alimenticios</option>
+        </select>
+    <label for="problematica">Motivo de consulta:</label>
+    <textarea name="problematica" id="" cols="60" rows="10" placeholder="Indicar problemática a tratar"></textarea>
+    <div id="oculto" style="display: none;"> Se envio la información </div>        
+     <button id="btnEnviar">Enviar información</button>
+     <button id="ocultarInf">Reiniciar</button> 
+</form>
+<footer>     
+    <section class="contenedorFooter">
+        <div class="contenedorFooter__img">
+            <img src="./images/logo_paola.svg" alt="Psico Paola Flórez" class="logofooter">
+        </div>
+        <div class="contenedorFooter__contenido">
+        <li><a href="https://www.instagram.com/psicopaolaflorez/?hl=es-la"><i class="fab fa-instagram-square"></i></a></li>
+        <p>Instagram</p>
+        <li><a href="https://www.linkedin.com/in/paola-florez-arias-76585b56/"><i class="fab fa-linkedin"></i></a></li>
+        <p>Linkedin</p>
+        <li><a href="https://wa.link/1w11b7"><i class="fab fa-whatsapp-square"></i></a></li>
+        <p>Whatsapp</p>
+        </div>
+        <div class="contenedorFooter__pie">
+            <strong><p>Copyright LaagDesing © 2021</p>
+            </strong> </div>
+    </section>   
+</footer>
+<script src="https://kit.fontawesome.com/09230c2d93.js" crossorigin="anonymous"></script> 
 </body>
 </html>
