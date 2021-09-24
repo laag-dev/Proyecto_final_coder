@@ -1,0 +1,203 @@
+@import "./variables";
+@import"./globales";
+@import "./mixins";
+
+
+/*Primera seccion*/
+
+.contenedorLogo {
+  width:100%;
+  height: 35vh;
+  background-color: $color-blanco;
+  @include flex(column, center, center);
+  
+
+  img {
+    width: 400px;
+    height: 350px;
+    filter: contrast(120);
+          
+  }
+}
+
+.contenedorContacto {
+      margin: 0;
+      @include flex(row, flex-start, center);
+      width: 100%;
+      height: 80%;
+      background-color: $color-blanco;
+      
+    &__div1 {
+      width: 70%;
+      height: 40vh;
+      margin-left: 2rem;
+      margin-top: 9rem;
+      @include flex (column, left, space-evenly);
+      box-shadow:  -11px -11px 22px #e4b17a65,
+             11px 11px 22px #ffcf907a;
+      
+      &--img {
+
+        @include flex(row, center, space-evenly);
+        img {
+          height: 450px;
+          width: 350px;
+        }
+        h1 {@include titulos(20px, $color-tur, flex-end);}
+  
+      }
+    }
+
+    ::placeholder{
+      font-family: $letra-general;
+      border-radius: 10px;
+      font-family: "Font Awesome 5 Free"; font-weight: 250;
+      
+    }
+
+    &__formulario {
+      @include flex (column, flex-start, space-evenly);
+      width: 40%;
+      height: 75%;
+      background-color:  black;
+      padding: 10px 20px;
+      border-radius: 10px;
+      margin-top: 5rem;
+      margin-right: 5rem;
+      margin-bottom: 5rem;
+      box-shadow:  -17px -17px 11px #363032,
+             17px 17px 11px #363032;
+  
+
+      h2 {@include titulos(25px, $color-blanco, center);}
+
+      p {@include parrafos(18px,$color-blanco, center);
+      margin: 1rem;}
+
+    input, textarea {
+        width: 90%;
+        font-family: $letra-general;
+        font-size: 15px;
+        padding: 5px;
+        margin: 0.5rem;
+        border-radius: 6px;
+        
+    }
+  
+    button {
+        width: 50%;
+        margin: 0;
+        font-size: 18px;
+        padding: 4px;
+        margin: 0.5rem;
+        color:black;
+        font-family: $letra-general;
+        background: #F8BF85;
+        margin-left: 7rem;
+        }
+  
+    button:hover{
+      cursor: pointer;}
+  
+
+    select {
+      width: 90%;
+      margin: 0;
+      font-family: $letra-general;
+      font-size: 15px;
+      padding: 5px;
+      margin: 0.5rem;
+      
+      }
+    }
+  }
+
+  .bubble1{
+    width: 150px;
+    height: 150px;
+    background: red;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    border-radius: 100%;
+    filter: blur(10px);
+    animation: colorChange 15s linear infinite;
+  }
+
+  @keyframes colorChange{
+    0%{ background:red; }
+    25%{transform:scale(0.5);}
+    50%{background:blue;}
+    75%{transform: scale(1.5);}
+    100%{background:red;}
+
+  }
+
+  .bubble2{
+    width: 250px;
+    height: 250px;
+    background: red;
+    position: absolute;
+    top: 40%;
+    right: 15%;
+    border-radius: 100%;
+    filter: blur(10px);
+    z-index: -2;
+    animation: colorChange 15s linear infinite;
+  }
+
+  .square{
+    width: 150px;
+    height: 150px;
+    background: red;
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    animation: positionChange 15s linear infinite;
+  }
+
+  @keyframes positionChange{
+    0%{transform: rotate(0deg);}
+    50%{transform: rotate(360deg);}
+    100%{transform:rotate(0deg)}
+  }
+
+  .modal{
+    position: absolute;
+    width: 100vw;
+    height: 200vh;
+    overflow-y:hidden;
+    background-color: rgba(0, 0, 0, 0.336);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    
+
+    &__content{
+      width: 350px;
+      height: 400px;
+      background-color: #f4f4f4;
+      border-radius: 2rem;
+      position: relative;
+      margin-top: 4rem;
+
+      h1 {@include titulos(28px, $color-tur, center);
+        margin-top: 7rem;}
+        p {@include parrafos(16px,$color-gris, center); margin: 1rem;}
+
+      &--close{
+        position: absolute;
+        top: 5%;
+        right: 5%;
+        background-color: black;
+        border-radius: 100%;
+        color: $color-blanco;
+        width: 10%;
+        height: 8%;
+        font-size: 24px;
+        text-align: center;
+        cursor: pointer;
+      }
+    }
+    
+  }

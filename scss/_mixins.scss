@@ -15,3 +15,10 @@
     color: $color;
     text-align: $align;
 }
+@mixin contacto ($size, $width, $margin) {
+    font-size: $size;
+    width: $width;
+    margin: $margin;
+}
+
+
