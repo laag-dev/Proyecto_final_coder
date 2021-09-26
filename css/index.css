@@ -10,23 +10,20 @@
   padding: 0;
   list-style: none;
   box-sizing: border-box;
-  font-family: 'Aleo', serif;
+  font-family: "Aleo", serif;
   scroll-behavior: smooth; }
 
 /*variables de toda la web*/
 @media screen and (max-width: 360px) {
-  .grid-container
-#about-first-section .contacto {
+  .nav #about-first-section .nav__menu {
     flex-direction: column; } }
 
 @media screen and (max-width: 760px) {
-  .grid-container
-#about-first-section .contacto {
+  .grid-container #about-first-section .contacto {
     flex-direction: column; } }
 
 @media screen and (max-width: 1200px) {
-  .grid-container
-#about-first-section .contacto {
+  .grid-container #about-first-section .contacto {
     flex-direction: column; } }
 
 /*Header*/
@@ -196,23 +193,20 @@ footer {
   padding: 0;
   list-style: none;
   box-sizing: border-box;
-  font-family: 'Aleo', serif;
+  font-family: "Aleo", serif;
   scroll-behavior: smooth; }
 
 /*variables de toda la web*/
 @media screen and (max-width: 360px) {
-  .grid-container
-#about-first-section .contacto {
+  .nav #about-first-section .nav__menu {
     flex-direction: column; } }
 
 @media screen and (max-width: 760px) {
-  .grid-container
-#about-first-section .contacto {
+  .grid-container #about-first-section .contacto {
     flex-direction: column; } }
 
 @media screen and (max-width: 1200px) {
-  .grid-container
-#about-first-section .contacto {
+  .grid-container #about-first-section .contacto {
     flex-direction: column; } }
 
 /*Header*/
@@ -573,23 +567,20 @@ footer {
   padding: 0;
   list-style: none;
   box-sizing: border-box;
-  font-family: 'Aleo', serif;
+  font-family: "Aleo", serif;
   scroll-behavior: smooth; }
 
 /*variables de toda la web*/
 @media screen and (max-width: 360px) {
-  .grid-container
-#about-first-section .contacto {
+  .nav #about-first-section .nav__menu {
     flex-direction: column; } }
 
 @media screen and (max-width: 760px) {
-  .grid-container
-#about-first-section .contacto {
+  .grid-container #about-first-section .contacto {
     flex-direction: column; } }
 
 @media screen and (max-width: 1200px) {
-  .grid-container
-#about-first-section .contacto {
+  .grid-container #about-first-section .contacto {
     flex-direction: column; } }
 
 /*Header*/
@@ -1067,8 +1058,10 @@ footer {
         font-size: 15px;
         padding: 5px;
         margin: 0.5rem;
-        color: #363032;
-        background: #f8bf85; }
+        color: #363032; }
+      .contenedor__carruselUno--card1 a :hover {
+        transition: 0.5ms;
+        background-color: #F8BF85; }
 
 /*Tercera seccion*/
 .contenedorDos {

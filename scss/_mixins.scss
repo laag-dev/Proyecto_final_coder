@@ -22,3 +22,20 @@
 }
 
 
+$responsivos: (
+    sm : 360px,
+    md : 768px,
+    lg : 1024px
+);
+
+@mixin media-up ($responsivo) {
+    @media screen and (min-width: map-get($responsivos, $responsivo)) {
+        @content;
+        
+    }
+}
+
+
+ 
+
+

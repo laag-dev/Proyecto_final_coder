@@ -3,35 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="images/icono.svg" type="image/x-icon"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <title>Paola Flórez</title>
     <link rel="stylesheet" href="Css/index.css">
     <title>Contacto</title>
 </head>
 <body>
-    <div class="modal">
-        <div class="modal__content">
-            <span class="modal__content--close">x</span>
-            <h1 class='modal__content--title'></h1>
-        <strong><p class='modal__content--text'></p></strong>
-        </div>
+    <div class="nav">
+        <nav class="nav__menu">
+            <ul>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="terapia_online.html">Terapia online</a> </li>
+            <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
     </div>
     <section class="contenedorLogo">
         <img src="images/logo_paola.svg">
-        <div class="nav">
-            <nav class="nav__menu">
-                <ul>
-                    <li><a href="./index.html">Inicio</a></li>
-                    <li><a href="terapia_online.html">Terapia online</a> </li>
-                <li><a href="contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-        </div>
+        
     </section>
     <section class="contenedorContacto">
         <div class="contenedorContacto__div1">
             <div class="contenedorContacto__div1--img" >
                 <img src="./images/mail.svg" alt="">
-                <h1>¡Agenda tu cita psicológica!</h1>
+                <h1 class="display-3">¡Agenda tu cita psicológica!</h1>
             </div> 
         </div>
         <div class="contenedorContacto__formulario">
@@ -54,6 +51,13 @@
         <label for="problematica">Motivo de consulta:</label>
         <textarea name="problematica" id="" cols="60" rows="10" placeholder="Indicar problemática a tratar"></textarea>       
         <button id="btnEnviar">Enviar información</button> 
+        </div>
+        <div class="modal">
+            <div class="modal__content">
+                <span class="modal__content--close">x</span>
+                <h1 class='modal__content--title'></h1>
+            <strong><p class='modal__content--text'></p></strong>
+            </div>
         </div>
     </section>
     </form>

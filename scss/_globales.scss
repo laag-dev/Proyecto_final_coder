@@ -1,53 +1,53 @@
-* {margin: 0;
-    padding: 0;
-    list-style: none;
-    box-sizing: border-box;
-    font-family: 'Aleo', serif;
-    scroll-behavior: smooth;
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: "Aleo", serif;
+  scroll-behavior: smooth;
 }
 @import "./variables";
 @import "./mixins";
 
-@media screen and (max-width:360px) {
-    .grid-container
-    #about-first-section .contacto{
-     flex-direction: column; 
-    }
+@media screen and (max-width: 360px) {
+  .nav #about-first-section .nav__menu {
+    flex-direction: column;
   }
-  @media screen and (max-width:760px) {
-      .grid-container
-      #about-first-section .contacto{
-       flex-direction: column; 
-      }
-    }
-  @media screen and (max-width:1200px) {
-      .grid-container
-       #about-first-section .contacto{
-      flex-direction: column; 
-      }
-    }
+}
+@media screen and (max-width: 760px) {
+  .grid-container #about-first-section .contacto {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .grid-container #about-first-section .contacto {
+    flex-direction: column;
+  }
+}
 
-  /*Header*/
+/*Header*/
 header {
-  width:100%;
+  width: 100%;
   height: 100vh;
   background: #186365;
-  background: -webkit-linear-gradient(to right, #f8bf8557, #1862656b), url(../images/fondo_psicologia.jpg);
-  background: linear-gradient(to right, #f8bf85c4, #18626557), url(../images/fondo_psicologia.jpg);
+  background: -webkit-linear-gradient(to right, #f8bf8557, #1862656b),
+    url(../images/fondo_psicologia.jpg);
+  background: linear-gradient(to right, #f8bf85c4, #18626557),
+    url(../images/fondo_psicologia.jpg);
   background-attachment: fixed;
-  background-position:center;
+  background-position: center;
   background-size: cover;
   background-size: 120%;
-  animation: movimiento 40s infinite linear alternate;  
+  animation: movimiento 40s infinite linear alternate;
   background-repeat: no-repeat;
-}  
+}
 
-@keyframes movimiento{
-  from{
-      background-position: top right;
+@keyframes movimiento {
+  from {
+    background-position: top right;
   }
-  to{
-      background-position: bottom left;
+  to {
+    background-position: bottom left;
   }
 }
 
@@ -56,63 +56,59 @@ header {
   width: 100%;
   padding: 0rem;
   margin: right 0.5rem;
-  margin-bottom:2rem;
+  margin-bottom: 2rem;
   @include flex(column, flex-end, flex-start);
-  
-      
+
   &__imagenLogo {
-          width: 700px;
-          height: 280px;
-          filter: contrast(120)
-          
-      }
+    width: 700px;
+    height: 280px;
+    filter: contrast(120);
   }
+}
 
 .nav {
+  &__menu {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    z-index: 999;
+    border-bottom: 2px solid $color-melon;
+    background: $color-gris;
+    box-shadow: -1px -6px 10px -4px rgba(0, 0, 0, 0.64);
+    -webkit-box-shadow: -1px -6px 10px -4px rgba(0, 0, 0, 0.64);
+    -moz-box-shadow: -1px -6px 10px -4px rgba(0, 0, 0, 0.64);
+   
+    ul {
+      height: inherit;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
-  &__menu{
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 40px;
-      z-index: 999;
-      border-bottom:2px solid $color-melon;
-      background: $color-gris;
-      box-shadow: -1px -6px 10px -4px rgba(0,0,0,0.64);
-      -webkit-box-shadow: -1px -6px 10px -4px rgba(0,0,0,0.64);
-      -moz-box-shadow: -1px -6px 10px -4px rgba(0,0,0,0.64);
-  
-      ul {
-          height: inherit;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-                  
       li {
-          list-style: none;
-                  
-          a {
-              text-decoration: none;
-              color: $color-blanco;
-              font-size: 1rem;
-              margin: 0px 10px;
-              padding: 15px;
-              border-radius: 10px;
-              cursor:pointer;
-          }
+        list-style: none;
+
+        a {
+          text-decoration: none;
+          color: $color-blanco;
+          font-size: 1rem;
+          margin: 0px 10px;
+          padding: 15px;
+          border-radius: 10px;
+          cursor: pointer;
+        }
       }
 
-      li:hover{
-          
-          a{
-              color: $color-gris;
-              transition:0.5s;
-              background-color: $color-melon;
-              border-radius: 20%;
-              }
-          }
+      li:hover {
+        a {
+          color: $color-gris;
+          transition: 0.5s;
+          background-color: $color-melon;
+          border-radius: 20%;
+        }
       }
+    }
   }
 }
 
@@ -122,44 +118,50 @@ header {
   width: 100%;
   @include flex(column, left, baseline);
 
-  &__tituloH1 {@include titulos(60px, $color-tur, left);
-  animation: loadAnimation 1s cubic-bezier(1, -0.31, 1, 1);
-  margin-top: 5rem;
-  span {
-    background-color:#f8bf8573;
+  &__tituloH1 {
+    @include titulos(60px, $color-tur, left);
+    animation: loadAnimation 1s cubic-bezier(1, -0.31, 1, 1);
+    margin-top: 5rem;
+    span {
+      background-color: #f8bf8573;
+    }
   }
-  }
-  
 
-  &__subTitulo {@include titulos(35px, black, left);
-  margin-top: 1rem;
-  animation: loadAnimation 1s cubic-bezier(1, -0.31, 1, 1);
-  animation-delay: 0.5s;}
+  &__subTitulo {
+    @include titulos(35px, black, left);
+    margin-top: 1rem;
+    animation: loadAnimation 1s cubic-bezier(1, -0.31, 1, 1);
+    animation-delay: 0.5s;
+  }
   @keyframes loadAnimation {
-      0%{transform: translateY(-5rem);
-         opacity: 0;}   
-      100%{transform: translateY(0rem);
-         opacity: 1;}   
-     }
+    0% {
+      transform: translateY(-5rem);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0rem);
+      opacity: 1;
+    }
+  }
 }
 
 /*FOOTER*/
 
-footer{
+footer {
   width: 100%;
   height: 40vh;
   position: relative;
   overflow: hidden;
   background-color: $color-tur;
   margin-bottom: 2rem;
-  
+
   .contenedorFooter {
-      box-shadow:  -12px -12px 24px #36303275;
-      border-radius: 42% 58% 100% 0% / 20% 46% 54% 80%;
-      background-color: $color-blanco;
-      width: 130%;
-      height: 40vh;
-      @include flex(row, flex-start, flex-start);
+    box-shadow: -12px -12px 24px #36303275;
+    border-radius: 42% 58% 100% 0% / 20% 46% 54% 80%;
+    background-color: $color-blanco;
+    width: 130%;
+    height: 40vh;
+    @include flex(row, flex-start, flex-start);
 
     &__img {
       @include flex(column, center, center);
@@ -168,7 +170,7 @@ footer{
       height: 200px;
     }
 
-    &__contenido { 
+    &__contenido {
       width: 42%;
       height: 100px;
       @include flex(row, center, center);
@@ -176,16 +178,22 @@ footer{
       margin-left: 2rem;
       align-content: flex-end;
 
-      h4 {@include titulos(22px, $color-tur, center);}
-      p {@include parrafos(18px,$color-gris, center);}
+      h4 {
+        @include titulos(22px, $color-tur, center);
+      }
+      p {
+        @include parrafos(18px, $color-gris, center);
+      }
       li {
         margin: 1.5rem;
         font-size: 35px;
         background-color: $color-blanco;
 
-        a { background-color:$color-melon; color: $color-gris;}
+        a {
+          background-color: $color-melon;
+          color: $color-gris;
+        }
       }
-
     }
 
     &__pie {
@@ -194,6 +202,6 @@ footer{
       margin-top: 10rem;
       text-align: center;
       width: 16%;
-       } 
+    }
   }
- }
+}
