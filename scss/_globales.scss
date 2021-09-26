@@ -122,12 +122,16 @@ header {
   width: 100%;
   @include flex(column, left, baseline);
 
-  &__tituloH1 {@include titulos(40px, $color-tur, left);
+  &__tituloH1 {@include titulos(60px, $color-tur, left);
   animation: loadAnimation 1s cubic-bezier(1, -0.31, 1, 1);
+  margin-top: 5rem;
+  span {
+    background-color:#f8bf8573;
+  }
   }
   
 
-  &__subTitulo {@include titulos(25px, black, left);
+  &__subTitulo {@include titulos(35px, black, left);
   margin-top: 1rem;
   animation: loadAnimation 1s cubic-bezier(1, -0.31, 1, 1);
   animation-delay: 0.5s;}

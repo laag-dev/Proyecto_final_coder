@@ -106,12 +106,15 @@ header {
   align-items: left;
   justify-content: baseline; }
   .inicio__tituloH1 {
-    font-size: 40px;
+    font-size: 60px;
     color: #0E5053;
     text-align: left;
-    animation: loadAnimation 1s cubic-bezier(1, -0.31, 1, 1); }
+    animation: loadAnimation 1s cubic-bezier(1, -0.31, 1, 1);
+    margin-top: 5rem; }
+    .inicio__tituloH1 span {
+      background-color: #f8bf8573; }
   .inicio__subTitulo {
-    font-size: 25px;
+    font-size: 35px;
     color: black;
     text-align: left;
     margin-top: 1rem;
@@ -289,12 +292,15 @@ header {
   align-items: left;
   justify-content: baseline; }
   .inicio__tituloH1 {
-    font-size: 40px;
+    font-size: 60px;
     color: #0E5053;
     text-align: left;
-    animation: loadAnimation 1s cubic-bezier(1, -0.31, 1, 1); }
+    animation: loadAnimation 1s cubic-bezier(1, -0.31, 1, 1);
+    margin-top: 5rem; }
+    .inicio__tituloH1 span {
+      background-color: #f8bf8573; }
   .inicio__subTitulo {
-    font-size: 25px;
+    font-size: 35px;
     color: black;
     text-align: left;
     margin-top: 1rem;
@@ -663,12 +669,15 @@ header {
   align-items: left;
   justify-content: baseline; }
   .inicio__tituloH1 {
-    font-size: 40px;
+    font-size: 60px;
     color: #0E5053;
     text-align: left;
-    animation: loadAnimation 1s cubic-bezier(1, -0.31, 1, 1); }
+    animation: loadAnimation 1s cubic-bezier(1, -0.31, 1, 1);
+    margin-top: 5rem; }
+    .inicio__tituloH1 span {
+      background-color: #f8bf8573; }
   .inicio__subTitulo {
-    font-size: 25px;
+    font-size: 35px;
     color: black;
     text-align: left;
     margin-top: 1rem;
@@ -774,34 +783,34 @@ footer {
     .contenedorTerapia__izq img {
       width: 100%;
       height: 100%;
-      transition: all 6500ms ease-out; }
-    .contenedorTerapia__izq--capa {
-      top: 0;
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      background: #f8bf8580;
-      opacity: 0;
-      transition: all 6500ms ease-out;
-      visibility: hidden;
-      text-align: center; }
-      .contenedorTerapia__izq--capa:hover {
+      transition: all 500s ease-out; }
+      .contenedorTerapia__izq img:hover {
         opacity: 1;
         visibility: visible;
-        transition: all 6500ms ease-out;
+        transition: all 500s ease-out;
         margin-top: 100px;
         margin-bottom: 15px; }
-        .contenedorTerapia__izq--capa:hover h4 {
-          font-size: 20px;
-          color: #000000;
-          text-align: center;
-          margin: 4rem;
+        .contenedorTerapia__izq img:hover--capa {
+          top: 0;
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          background: #f8bf8580;
+          opacity: 0;
+          transition: all 500s ease-out;
+          visibility: hidden;
           text-align: center; }
-        .contenedorTerapia__izq--capa:hover p {
-          text-align: center;
-          font-size: 16px;
-          color: black;
-          text-align: center; }
+          .contenedorTerapia__izq img:hover--capa h4 {
+            font-size: 20px;
+            color: #000000;
+            text-align: center;
+            margin: 4rem;
+            text-align: center; }
+          .contenedorTerapia__izq img:hover--capa p {
+            text-align: center;
+            font-size: 16px;
+            color: black;
+            text-align: center; }
   .contenedorTerapia__dere {
     height: 70vh;
     width: 50%;
@@ -908,7 +917,7 @@ footer {
   margin-bottom: 4rem;
   border-radius: 11px;
   background: linear-gradient(315deg, #e6e6e6, #ffffffd0);
-  box-shadow: -17px -17px 11px #f2f2f2d2, 17px 17px 11px #ffffffcc;
+  box-shadow: -17px -17px 11px #f2f2f2d2, 17px 17px 11px #ffffffcc;
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 1fr 1fr;
@@ -925,9 +934,9 @@ footer {
     color: #363032;
     text-align: center;
     width: 85%;
-    margin-top: .5rem; }
+    margin-top: 0.5rem; }
     .grid p span {
-      background-color: #F8BF85; }
+      background-color: #f8bf85c4; }
   .grid__izquierda1 {
     height: 200px;
     background-color: #ffffff;
@@ -945,13 +954,13 @@ footer {
       height: 280px;
       border-radius: 10px;
       background: #f8bf85a9;
-      box-shadow: -11px -11px 1px #eeb78096, 11px 11px 1px #ffc68a62; }
+      box-shadow: -11px -11px 1px #eeb78096, 11px 11px 1px #ffc68a62; }
   .grid__izquierda2--imagenDerecha {
     width: 500px;
     height: 250px;
     border-radius: 10px;
     background: #18626556;
-    box-shadow: -11px -11px 1px #175e614d, 11px 11px 1px #19666956; }
+    box-shadow: -11px -11px 1px #175e614d, 11px 11px 1px #19666956; }
   .grid__derecha2 {
     margin-top: 2.4rem;
     height: 250px;
@@ -971,14 +980,13 @@ footer {
 .contenedor {
   height: 90vh;
   width: 95vw;
-  margin: 1rem;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   border-radius: 14px;
-  box-shadow: -17px -17px 11px #363032b2, 17px 17px 11px #363032a8; }
+  box-shadow: -17px -17px 11px #363032b2, 17px 17px 11px #363032a8; }
   .contenedor h3 {
     font-size: 22px;
     color: #0E5053;
@@ -989,13 +997,10 @@ footer {
     color: #363032;
     margin-top: 1rem; }
   .contenedor__boton {
-    width: 100px;
-    height: 100px;
-    border-radius: 100%;
-    background-color: purple;
     position: absolute;
     top: 50%;
-    transition: 1s; }
+    transition: 2s;
+    padding-top: 40rem; }
   .contenedor__cabecera {
     display: flex;
     flex-direction: column;
@@ -1011,30 +1016,31 @@ footer {
       color: #363032;
       text-align: center;
       margin: 1rem; }
-  .contenedor__carrousel {
+  .contenedor__carrusel {
     width: 90%;
     display: flex;
     align-items: center;
     justify-items: center;
     flex: 1;
     overflow: hidden;
-    padding: 2rem;
-    margin-left: 2rem; }
-    .contenedor__carrousel button {
-      margin-top: 20rem;
-      font-size: 15px;
-      padding: 5px;
-      margin: 0.5rem;
-      color: #363032;
-      background: #F8BF85; }
+    padding: 3rem; }
+    .contenedor__carrusel--anterior {
+      width: 30px;
+      height: 30px;
+      border-radius: 100%;
+      background-color: #F8BF85; }
+    .contenedor__carrusel--siguiente {
+      width: 30px;
+      height: 30px;
+      border-radius: 100%;
+      background-color: #F8BF85; }
   .contenedor__carruselUno {
     width: 200%;
     height: 90%;
     border-radius: 21px;
     transition: 0.5s;
-    /* background: linear-gradient(145deg, #e6e6e6, #ffffff);
-        box-shadow:  11px 11px 0px #dedede,
-                     -11px -11px 0px #ffffff; */
+    background: linear-gradient(145deg, #e6e6e6, #ffffff);
+    box-shadow: 11px 11px 0px #dedede, -11px -11px 0px #ffffff;
     display: flex;
     align-items: center;
     justify-content: space-evenly; }
@@ -1044,14 +1050,14 @@ footer {
       padding: 5px;
       margin: 0.5rem;
       color: #363032;
-      background: #F8BF85; }
+      background: #f8bf85; }
     .contenedor__carruselUno--card1 {
       width: 30vw;
       height: 20rem;
       border-radius: 21px;
       background: linear-gradient(145deg, #ffffff, #e6e6e6);
       margin: 1.3rem;
-      box-shadow: 11px 11px 0px #ffffff, -11px -11px 0px #dedede;
+      box-shadow: 11px 11px 0px #ffffff, -11px -11px 0px #dedede;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -1062,14 +1068,14 @@ footer {
         padding: 5px;
         margin: 0.5rem;
         color: #363032;
-        background: #F8BF85; }
+        background: #f8bf85; }
 
 /*Tercera seccion*/
 .contenedorDos {
   height: 80vh;
   width: 100%;
   background: linear-gradient(315deg, #e6e6e6, #ffffffd0);
-  box-shadow: -17px -17px 11px #f2f2f2d2, 17px 17px 11px #ffffffcc;
+  box-shadow: -11px -11px 22px #e4b17a65, 11px 11px 22px #ffcf907a;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -1083,7 +1089,7 @@ footer {
     height: 80vh;
     width: 60%;
     margin-left: 8rem;
-    box-shadow: -11px -11px 22px #e4b17a65, 11px 11px 22px #ffcf907a;
+    box-shadow: -11px -11px 22px #e4b17a65, 11px 11px 22px #ffcf907a;
     border-radius: 1px 100px 100px 1px; }
     .contenedorDos__div1 h2 {
       font-size: 30px;

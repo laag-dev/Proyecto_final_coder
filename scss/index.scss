@@ -1,7 +1,6 @@
 @import "./variables";
-@import"./globales";
+@import "./globales";
 @import "./mixins";
-
 
 @import "./pages/contacto";
 @import "./pages/terapia_online";
@@ -9,249 +8,245 @@
 /*Primera seccion*/
 
 .grid {
-    height: 100vh;
-    width: 100%;
-    padding: 2rem;
-    margin-bottom: 4rem;
-    border-radius: 11px;
-    background: linear-gradient(315deg, #e6e6e6, #ffffffd0);
-    box-shadow:  -17px -17px 11px #f2f2f2d2,
-             17px 17px 11px #ffffffcc;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 1fr 1fr;
-    gap: 1em;
-    background-image: url(../images/pattern-randomized.svg);
-    margin-bottom:1rem;
-    h2 {@include titulos(30px, $color-tur, center);
-        margin-top:4rem;}
+  height: 100vh;
+  width: 100%;
+  padding: 2rem;
+  margin-bottom: 4rem;
+  border-radius: 11px;
+  background: linear-gradient(315deg, #e6e6e6, #ffffffd0);
+  box-shadow: -17px -17px 11px #f2f2f2d2, 17px 17px 11px #ffffffcc;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 1fr 1fr;
+  gap: 1em;
+  background-image: url(../images/pattern-randomized.svg);
+  margin-bottom: 1rem;
+  h2 {
+    @include titulos(30px, $color-tur, center);
+    margin-top: 4rem;
+  }
 
-        p {@include parrafos(20px,$color-gris, center);
-        width: 85%;
-        
-        margin-top:.5rem;
+  p {
+    @include parrafos(20px, $color-gris, center);
+    width: 85%;
 
-        span{
-            background-color: #F8BF85
-        }
+    margin-top: 0.5rem;
+
+    span {
+      background-color:#f8bf85c4;
     }
-    
-    &__izquierda1 {
-        
-        height: 200px;
-        background-color: #ffffff;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
+  }
 
-    } 
-        
-            
+  &__izquierda1 {
+    height: 200px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
 
-    &__derecha1 {
-        
-        @include flex (column, center, center);
+  &__derecha1 {
+    @include flex(column, center, center);
 
-        &--imagenSobre  {
-            width: 400px;
-            height: 280px;
-            border-radius: 10px;
-            background: #f8bf85a9;
-            box-shadow:  -11px -11px 1px #eeb78096,
-             11px 11px 1px #ffc68a62;
-            
-        } 
-
+    &--imagenSobre {
+      width: 400px;
+      height: 280px;
+      border-radius: 10px;
+      background: #f8bf85a9;
+      box-shadow: -11px -11px 1px #eeb78096, 11px 11px 1px #ffc68a62;
     }
-        
-    &__izquierda2 {
-       
-        &--imagenDerecha {
-            width: 500px;
-            height: 250px;
-            border-radius: 10px;
-            background: #18626556;
-            box-shadow:  -11px -11px 1px #175e614d,
-             11px 11px 1px #19666956;
-        }
+  }
+
+  &__izquierda2 {
+    &--imagenDerecha {
+      width: 500px;
+      height: 250px;
+      border-radius: 10px;
+      background: #18626556;
+      box-shadow: -11px -11px 1px #175e614d, 11px 11px 1px #19666956;
+    }
+  }
+
+  &__derecha2 {
+    margin-top: 2.4rem;
+    height: 250px;
+    width: 100vh;
+    background-color: #ffffff;
+
+    h3 {
+      @include titulos(28px, $color-tur, center);
     }
 
-    &__derecha2 {
-        margin-top: 2.4rem;
-        height: 250px;
-        width: 100vh;
-        background-color: #ffffff;
-
-        h3 {@include titulos(28px, $color-tur, center);}
-
-            p {@include parrafos(20px,$color-gris, center); margin-left: 3rem;}
+    p {
+      @include parrafos(20px, $color-gris, center);
+      margin-left: 3rem;
     }
+  }
 }
 
 /*Segunda seccion*/
 
 .contenedor {
-    height: 90vh;
-    width: 95vw;
-    margin: 1rem;
-    position: relative;
-    display: flex;
-    align-items:  center;
-    justify-content: center;
-    flex-direction: column;
-    border-radius: 14px;
-    box-shadow:  -17px -17px 11px #363032b2,
-             17px 17px 11px #363032a8;
-    
-    h3 {@include titulos(22px, $color-tur, center);}
+  height: 90vh;
+  width: 95vw;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 14px;
+  box-shadow: -17px -17px 11px #363032b2, 17px 17px 11px #363032a8;
 
-    p {
+  h3 {
+    @include titulos(22px, $color-tur, center);
+  }
+
+  p {
     width: 60%;
     text-align: center;
     color: $color-gris;
-    margin-top: 1rem;}
+    margin-top: 1rem;
+  }
 
-    &__boton{
-        width: 100px;
-        height: 100px;
-        border-radius: 100%;
-        background-color: purple;
-        position: absolute;
-        top: 50%;
-        transition: 1s;
+  &__boton {
+    
+    position: absolute;
+    top: 50%;
+    transition: 2s;
+    padding-top: 40rem;
+
+    
+
+  }
+  &__cabecera {
+    @include flex(column, center, flex-start);
+
+    h2 {
+      @include titulos(28px, $color-tur, center);
+      margin-top: 1rem;
     }
-    &__cabecera {
-
-        @include flex(column, center, flex-start);
-
-        h2 {@include titulos(28px, $color-tur, center);
-        margin-top: 1rem;}
-        p {@include parrafos(18px,$color-gris, center); margin: 1rem;}
-
+    p {
+      @include parrafos(18px, $color-gris, center);
+      margin: 1rem;
     }
+  }
 
-    &__carrousel{
+  &__carrusel {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex: 1;
+    overflow: hidden;
+    padding: 3rem;
+    
 
-        width: 90%;
-        display: flex;
-        align-items: center;
-        justify-items: center;
-        flex: 1;
-        overflow: hidden;
-        padding: 2rem;
-        margin-left: 2rem;
+    &--anterior {
+      width: 30px;
+      height: 30px;
+      border-radius: 100%;
+      background-color: $color-melon;
+      }
+  
+      &--siguiente {
+        width: 30px;
+      height: 30px;
+      border-radius: 100%;
+      background-color: $color-melon;
+      }
+  }
 
-        button {
-            margin-top: 20rem;
-            font-size: 15px;
-            padding: 5px;
-            margin: 0.5rem;
-            color: $color-gris;
-            background: #F8BF85; 
-        }
-    }
-
-    &__carruselUno {
-
-        width: 200%;
-        height: 90%;
-        border-radius: 21px;
-        transition: 0.5s;
-        /* background: linear-gradient(145deg, #e6e6e6, #ffffff);
+  &__carruselUno {
+    width: 200%;
+    height: 90%;
+    border-radius: 21px;
+    transition: 0.5s;
+     background: linear-gradient(145deg, #e6e6e6, #ffffff);
         box-shadow:  11px 11px 0px #dedede,
-                     -11px -11px 0px #ffffff; */           
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
+                     -11px -11px 0px #ffffff; 
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 
-        button {
-            margin: 0;
-            font-size: 15px;
-            padding: 5px;
-            margin: 0.5rem;
-            color: $color-gris;
-            background: #F8BF85; 
-        }
-
-
-        &--card1 {
-            width: 30vw;
-            height: 20rem;
-            border-radius: 21px;
-            background: linear-gradient(145deg, #ffffff, #e6e6e6);
-            margin: 1.3rem;
-            box-shadow:  11px 11px 0px #ffffff,
-             -11px -11px 0px #dedede;
-            @include flex(column, center, space-evenly);
-
-            a {
-                margin: 0;
-                font-size: 15px;
-                padding: 5px;
-                margin: 0.5rem;
-                color: $color-gris;
-                background: #F8BF85; 
-                
-            }
-
-            
-        }
-    
-    
+    button {
+      margin: 0;
+      font-size: 15px;
+      padding: 5px;
+      margin: 0.5rem;
+      color: $color-gris;
+      background: #f8bf85;
     }
 
+    &--card1 {
+      width: 30vw;
+      height: 20rem;
+      border-radius: 21px;
+      background: linear-gradient(145deg, #ffffff, #e6e6e6);
+      margin: 1.3rem;
+      box-shadow: 11px 11px 0px #ffffff, -11px -11px 0px #dedede;
+      @include flex(column, center, space-evenly);
+
+      a {
+        margin: 0;
+        font-size: 15px;
+        padding: 5px;
+        margin: 0.5rem;
+        color: $color-gris;
+        background: #f8bf85;
+      }
+    }
+  }
 }
 /*Tercera seccion*/
 
-.contenedorDos{
+.contenedorDos {
+  height: 80vh;
+  width: 100%;
+  background: linear-gradient(315deg, #e6e6e6, #ffffffd0);
+  box-shadow:  -11px -11px 22px #e4b17a65,
+  11px 11px 22px #ffcf907a;
+  @include flex(row, center, left);
+  margin: 1rem;
+
+  &__div1 {
+    @include flex(column, left, center);
     height: 80vh;
-    width: 100%;
-    background: linear-gradient(315deg, #e6e6e6, #ffffffd0);
-    box-shadow:  -17px -17px 11px #f2f2f2d2,
-             17px 17px 11px #ffffffcc;
-    @include flex(row, center, left);
-    margin: 1rem;
+    width: 60%;
+    margin-left: 8rem;
+    box-shadow: -11px -11px 22px #e4b17a65, 11px 11px 22px #ffcf907a;
+    border-radius: 1px 100px 100px 1px;
 
-    &__div1 {
-        @include flex(column, left, center);
-        height: 80vh;
-        width: 60%;
-        margin-left: 8rem;
-        box-shadow:  -11px -11px 22px #e4b17a65,
-             11px 11px 22px #ffcf907a;
-        border-radius: 1px 100px 100px 1px;
-
-        h2 {@include titulos(30px, $color-tur, center);
-            margin-bottom: 3rem;}
-            
-            p {@include parrafos(18px,$color-gris, center); margin: 1rem;}
-      
-    }
-    
-    &__div2 {
-        @include flex(column, center , flex-end);
-        height: 80vh;
-        width: 20%;   
-        
-
-        img {
-            height: 300px;
-            width: 250px;
-        }
-
-        &--card1 {
-            height: 45vh;
-            margin-right: 16rem;
-        }
-
-        &--card2 {
-            height: 35vh;
-            margin-bottom: 1rem;
-            margin-top: 3rem;
-            
-        }
+    h2 {
+      @include titulos(30px, $color-tur, center);
+      margin-bottom: 3rem;
     }
 
+    p {
+      @include parrafos(18px, $color-gris, center);
+      margin: 1rem;
+    }
+  }
+
+  &__div2 {
+    @include flex(column, center, flex-end);
+    height: 80vh;
+    width: 20%;
+
+    img {
+      height: 300px;
+      width: 250px;
+    }
+
+    &--card1 {
+      height: 45vh;
+      margin-right: 16rem;
+    }
+
+    &--card2 {
+      height: 35vh;
+      margin-bottom: 1rem;
+      margin-top: 3rem;
+    }
+  }
 }
-    

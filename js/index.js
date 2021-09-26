@@ -1,14 +1,14 @@
 // Declaro las variables
 let carrousel = document.querySelector('.contenedor__carruselUno')
-let btnNext = document.querySelector(".contenedor__boton--siguiente");
-let btnBack = document.querySelector(".contenedor__boton--anterior");
+let btnNext = document.querySelector(".contenedor__carrusel--siguiente");
+let btnBack = document.querySelector(".contenedor__carrusel--anterior");
 let numero = 0;
 // inicio el slide
 btnNext.addEventListener("click", (e) => {
   e.preventDefault();
   if (numero === 0) {
     numero = 1;
-    carrousel.style.transform='translateX(-1000px)'
+    carrousel.style.transform='translateX(-1100px)'
     btnNext.style.opacity=0;
     btnBack.style.opacity=1;
 
