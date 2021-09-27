@@ -8,7 +8,7 @@ btnNext.addEventListener("click", (e) => {
   e.preventDefault();
   if (numero === 0) {
     numero = 1;
-    carrousel.style.transform='translateX(-1100px)'
+    carrousel.style.transform='translateX(-1140px)'
     btnNext.style.opacity=0;
     btnBack.style.opacity=1;
 
