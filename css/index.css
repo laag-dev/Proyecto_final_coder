@@ -774,34 +774,34 @@ footer {
     .contenedorTerapia__izq img {
       width: 100%;
       height: 100%;
-      transition: all 500s ease-out; }
-      .contenedorTerapia__izq img:hover {
+      transition: all 500ms ease-out; }
+    .contenedorTerapia__izq--capa {
+      top: 0;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      background: #f8bf8580;
+      opacity: 0;
+      transition: all 500ms ease-out;
+      visibility: hidden;
+      text-align: center; }
+      .contenedorTerapia__izq--capa h4 {
+        font-size: 20px;
+        color: #000000;
+        text-align: center;
+        margin: 4rem;
+        text-align: center; }
+      .contenedorTerapia__izq--capa p {
+        text-align: center;
+        font-size: 16px;
+        color: black;
+        text-align: center; }
+      .contenedorTerapia__izq--capa:hover {
         opacity: 1;
         visibility: visible;
-        transition: all 500s ease-out;
+        transition: all 500ms ease-out;
         margin-top: 100px;
         margin-bottom: 15px; }
-        .contenedorTerapia__izq img:hover--capa {
-          top: 0;
-          width: 100%;
-          height: 100%;
-          position: absolute;
-          background: #f8bf8580;
-          opacity: 0;
-          transition: all 500s ease-out;
-          visibility: hidden;
-          text-align: center; }
-          .contenedorTerapia__izq img:hover--capa h4 {
-            font-size: 20px;
-            color: #000000;
-            text-align: center;
-            margin: 4rem;
-            text-align: center; }
-          .contenedorTerapia__izq img:hover--capa p {
-            text-align: center;
-            font-size: 16px;
-            color: black;
-            text-align: center; }
   .contenedorTerapia__dere {
     height: 70vh;
     width: 50%;
